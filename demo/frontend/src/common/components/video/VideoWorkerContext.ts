@@ -698,7 +698,7 @@ export default class VideoWorkerContext {
         this._processEffects(form, effectParams, tracklets);
       }
 
-      if (enableWatermark) {
+      if (false) {
         this._drawWatermark(form, frameBitmap);
       }
 
