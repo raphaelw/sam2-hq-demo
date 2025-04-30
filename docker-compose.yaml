@@ -28,11 +28,13 @@ services:
       # # ffmpeg/video encode settings
       - FFMPEG_NUM_THREADS=1
       - VIDEO_ENCODE_CODEC=libx264
-      - VIDEO_ENCODE_CRF=23
-      - VIDEO_ENCODE_FPS=24
-      - VIDEO_ENCODE_MAX_WIDTH=1280
-      - VIDEO_ENCODE_MAX_HEIGHT=720
+      - VIDEO_ENCODE_CRF=10
+      - VIDEO_ENCODE_FPS=30
+      - VIDEO_ENCODE_MAX_WIDTH=1920
+      - VIDEO_ENCODE_MAX_HEIGHT=1080
       - VIDEO_ENCODE_VERBOSE=False
+      # # video length/duration limit
+      - MAX_UPLOAD_VIDEO_DURATION=600
     deploy:
       resources:
         reservations:
